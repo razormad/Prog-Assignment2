@@ -9,7 +9,6 @@
 # * getInverse:      get the Value of the inverse matrix
 
 makeCacheMatrix <- function(x = numeric()) {
-  
   #init cache NULL value if nothing is cached
   cache <- NULL  
   
@@ -27,9 +26,12 @@ makeCacheMatrix <- function(x = numeric()) {
   list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
 
+
+
 # ------------------- cacheSolve -------------------
 # Calculate the inverse of the matrix created especially in the above function. 
 # Used the stored result if it has been previously cached.
+
 cacheSolve <- function(x, ...) {
   # get the cached value
   inv <- x$getInverse()
