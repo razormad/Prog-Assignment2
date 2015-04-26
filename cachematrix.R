@@ -8,9 +8,6 @@
 # * setInverse:      set the Value of the inverse matrix
 # * getInverse:      get the Value of the inverse matrix
 
-# ------------------- cacheSolve -------------------
-# Calculate the inverse of the matrix created especially in the above function. 
-# Used the stored result if it has been previously cached.
 makeCacheMatrix <- function(x = numeric()) {
   
   #init cache NULL value if nothing is cached
